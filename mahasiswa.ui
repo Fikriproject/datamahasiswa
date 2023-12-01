@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>787</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(0, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Data Mahasiswa Kelas C</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NIM</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtNIM">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>80</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nama Lengkap</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtNama">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>291</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="optLaki">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>150</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Laki-laki</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="optPerempuan">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>150</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Perempuan</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Jenis Kelamin</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>110</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Program Studi</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSimpan">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btnSimpan{
+	background-color: rgb(0, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Simpan Data</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="gridMahasiswa">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>651</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color:black;</string>
+    </property>
+    <property name="rowCount">
+     <number>10</number>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </column>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QPushButton" name="btnCari">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>260</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	background-color: rgb(0, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Cari</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnClear">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>260</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btnClear{
+	background-color: rgb(0, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnHapus">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>260</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btnHapus{
+background-color: rgb(0, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Hapus Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnTambah">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>260</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btnTambah{
+	background-color: rgb(0, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Tambah Data</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtprodi">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>110</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>290</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tabel Data</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtthnmasuk">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>150</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>150</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tahun Masuk</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
